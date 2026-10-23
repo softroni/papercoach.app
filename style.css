@@ -257,14 +257,14 @@ main.wide { max-width: 64rem; }
 @media (max-width: 22rem) { .phone { --scale: 0.62; } }
 
 /* The home page (homePage): full-width bands, each with its content in .wrap. */
-main.home { max-width: none; padding: 0; }
+main.bands { max-width: none; padding: 0; }
 .band { padding: clamp(3rem, 7vw, 5.5rem) 0; }
 .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
-.home .title { margin: 0.3rem 0 0.8rem; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.1; letter-spacing: -0.02em; }
-.home .intro { max-width: 42rem; color: var(--muted); font-size: 1.1rem; }
-.home .more { margin: 1.75rem 0 0; }
-.home .more a { font-weight: 700; text-decoration: none; }
-.home .more a::after { content: " →"; }
+.bands .title { margin: 0.3rem 0 0.8rem; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.1; letter-spacing: -0.02em; }
+.bands .intro { max-width: 42rem; color: var(--muted); font-size: 1.1rem; }
+.bands .more { margin: 1.75rem 0 0; }
+.bands .more a { font-weight: 700; text-decoration: none; }
+.bands .more a::after { content: " →"; }
 .hero-band { padding-top: clamp(2rem, 5vw, 4rem); background: radial-gradient(55rem 28rem at 85% 12%, rgb(31 164 99 / 0.13), transparent 70%), radial-gradient(40rem 24rem at 5% 95%, rgb(224 163 46 / 0.12), transparent 70%), var(--page); border-bottom: 1px solid var(--line); }
 .home .hero { padding-top: 0; }
 .home .hero.with-phone { margin-inline: auto; }
@@ -322,6 +322,56 @@ a.path-tile:hover { transform: translateY(-3px); }
 .faq-grid { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: 3rem; max-width: 64rem; }
 .faq-grid .title { margin-top: 0.3rem; }
 .closing-band { background: linear-gradient(135deg, #22B36E, #15804B); color: #fff; }
+.band.white { background: var(--card); }
+.band.soft { background: #FFFDF8; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.wrap.narrow { max-width: 50rem; }
+.page-hero { padding-top: clamp(1.25rem, 3vw, 2rem); text-align: left; }
+.page-hero[style] { background: radial-gradient(52rem 26rem at 88% 18%, var(--hero), transparent 72%), radial-gradient(36rem 22rem at 4% 96%, rgb(224 163 46 / 0.1), transparent 70%), var(--page); }
+.page-hero .crumbs { margin: 0 0 1.25rem; }
+.page-hero h1 { margin: 0 0 0.9rem; font-size: clamp(2.1rem, 4.4vw, 3.2rem); line-height: 1.06; letter-spacing: -0.025em; }
+.page-hero .lede { max-width: 40rem; }
+.page-hero .stats { justify-content: flex-start; }
+.page-hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 3rem; align-items: center; }
+.hero-card { padding: 0.9rem; border: 1px solid var(--line); border-radius: 28px; background: var(--card); box-shadow: 0 30px 60px -36px rgb(31 27 20 / 0.5); }
+.hero-card img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.mosaic { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; padding: 0.9rem; border: 2px solid var(--edge); border-bottom-width: 6px; border-radius: 28px; background: var(--soft); box-shadow: 0 30px 60px -36px rgb(31 27 20 / 0.4); }
+.mosaic img { display: block; width: 100%; height: auto; border-radius: 16px; background: #FAF7F0; }
+.about-lina { display: grid; place-items: center; }
+.about-lina img { width: clamp(9rem, 20vw, 14rem); height: auto; }
+.bands .cards { margin-top: 1.5rem; }
+.bands .card { border-radius: 20px; box-shadow: 0 18px 36px -30px rgb(31 27 20 / 0.45); transition: transform 0.2s ease; }
+.bands a.card:hover { transform: translateY(-3px); }
+.path-section + .path-section { margin-top: 3rem; }
+.path-head { display: flex; align-items: center; gap: 0.6rem; margin: 0; font-size: 1.5rem; }
+.path-head a { color: var(--ink); text-decoration: none; }
+.path-dot { width: 0.9rem; height: 0.9rem; border-radius: 50%; background: var(--deep); box-shadow: 0 0 0 4px var(--soft); }
+.guide .quick { margin: 0 0 2rem; padding: 1.25rem 1.5rem; border-radius: 22px; }
+.guide .intro { margin-bottom: 2.5rem; }
+.guide .steps { margin-top: 2rem; }
+.guide .steps > li { margin: 0 0 1.5rem; padding: 1.25rem 1.4rem; border: 1px solid var(--line); border-radius: 24px; background: var(--card); box-shadow: 0 18px 40px -32px rgb(31 27 20 / 0.45); }
+.guide .steps > li.offer-li { padding: 0; border: none; box-shadow: none; background: none; }
+.guide .steps h3 { display: flex; align-items: center; gap: 0.7rem; margin: 0 0 0.9rem; font-size: 1.25rem; }
+.step-num { flex: none; display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: 50%; background: var(--green); box-shadow: 0 3px 0 var(--green-deep); color: #fff; font-size: 1rem; font-weight: 800; }
+.guide .steps img { margin: 0 auto; }
+.guide .steps p { margin: 0.9rem 0 0; }
+.guide .offer { margin: 0 0 1.5rem; border-radius: 24px; background: var(--tint); border-color: rgb(31 164 99 / 0.35); }
+.guide .steps .offer h3 { display: block; margin: 0; }
+.guide .steps .offer .offer-head img { margin: 0; }
+.tip-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.75rem; }
+.tip-card { padding: 1.4rem 1.5rem; border: 1px solid var(--line); border-radius: 24px; background: var(--card); box-shadow: 0 18px 40px -32px rgb(31 27 20 / 0.45); }
+.tip-card h3 { margin: 0 0 0.9rem; }
+.tip-card .checks { margin: 0; }
+.tip-card .mistakes { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.tip-card .mistakes strong { display: block; color: var(--ink); }
+.finish-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 3rem; align-items: start; }
+.finish-grid .finished, .finish-grid .sheet { margin: 1.25rem 0 0; }
+.guide .in-scene { margin: 3rem 0 0; }
+.facts.checks li { color: var(--ink); }
+.feature-hero { margin: 0; }
+.bands .feature { margin: 0; }
+.bands .feature.flip > .devices { order: -1; }
+.bands .feature:nth-of-type(even) > .devices { order: 0; }
+.bands .feature .checks { margin-top: 1.25rem; }
 .closing-grid { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2.5rem; align-items: center; max-width: 56rem; }
 .closing-grid img { width: 10rem; height: auto; filter: drop-shadow(0 14px 22px rgb(0 0 0 / 0.22)); }
 .closing-band h2 { margin: 0 0 0.5rem; color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.8rem); letter-spacing: -0.02em; }
@@ -335,7 +385,9 @@ a.path-tile:hover { transform: translateY(-3px); }
   .home .stats { justify-content: flex-start; }
 }
 @media (max-width: 52rem) {
-  .how-steps, .families, .faq-grid { grid-template-columns: 1fr; }
+  .how-steps, .families, .faq-grid, .page-hero-grid, .tip-cards { grid-template-columns: 1fr; }
+  .page-hero .hero-card, .page-hero .mosaic { width: min(22rem, 100%); }
+  .bands .feature.flip > .devices { order: 0; }
   .how-steps { gap: 1.25rem; }
   .lina-grid, .closing-grid { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 1.5rem; }
   .bubble::before { display: none; }
@@ -343,7 +395,7 @@ a.path-tile:hover { transform: translateY(-3px); }
   .closing-band .qr { margin-inline: auto; }
 }
 @media (max-width: 34rem) {
-  .path-tiles, .home #guides .cards { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .path-tiles, .bands .cards { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
   .tile-pic { height: 6.5rem; }
   .tile-pic img { width: 6.5rem; height: 6.5rem; }
   .tile-sub { display: none; }
