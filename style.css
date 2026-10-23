@@ -57,6 +57,34 @@ h3 { font-size: 1.15rem; margin: 1.25rem 0 0.4rem; }
 .offer.big { text-align: center; }
 .offer.big .store { align-items: center; }
 .facts li { margin: 0.5rem 0; }
+.feature-hero, .feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 3rem; align-items: center; margin: 2rem 0 4.5rem; }
+.feature-hero h1 { font-size: 2.6rem; }
+.feature-hero .store { align-items: flex-start; }
+.feature-hero .qr { margin-inline: 0; }
+.feature:nth-of-type(even) > .devices { order: -1; }
+.feature h2 { margin-top: 0; }
+.feature ul { padding-left: 1.2rem; color: var(--muted); }
+.devices { position: relative; padding: 0 9% 1.5rem 0; }
+.devices.solo { padding: 0; }
+.device { position: relative; background: #1b1b1f; box-shadow: inset 0 0 0 2px #45454c, 0 26px 46px -26px rgb(31 27 20 / 0.5); }
+.device img { display: block; width: 100%; height: auto; background: #fff; }
+.device.ipad { padding: 2.3%; border-radius: 5.5% / 4.2%; }
+.device.ipad img { border-radius: 3.2% / 2.4%; }
+.device.iphone { position: absolute; right: 0; bottom: 0; width: 33%; padding: 2.6%; border-radius: 15% / 7%; }
+.device.iphone img { border-radius: 12.5% / 5.8%; }
+.device.iphone::after { content: ""; position: absolute; top: 3.4%; left: 50%; width: 30%; height: 2.6%; margin-left: -15%; border-radius: 99px; background: #000; }
+.devices.solo .device.iphone { position: relative; width: min(16rem, 70%); margin: 0 auto; }
+.feature-wide { margin: 4rem 0; }
+.scene-pic img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 16px; }
+.extras { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1rem; }
+.extras > div { padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.extras h3 { margin: 0 0 0.3rem; }
+.extras p { margin: 0; color: var(--muted); }
+@media (max-width: 52rem) {
+  .feature-hero, .feature { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+  .feature:nth-of-type(even) > .devices { order: 0; }
+  .feature-hero h1 { font-size: 2rem; }
+}
 main.wide { max-width: 64rem; }
 .scenes { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 1.25rem; margin: 1rem 0; }
 .scene { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
