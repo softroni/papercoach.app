@@ -367,8 +367,8 @@ a.path-tile:hover { transform: translateY(-3px); }
 .finish-grid .finished, .finish-grid .sheet { margin: 1.25rem 0 0; }
 .guide .in-scene { margin: 3rem 0 0; }
 .facts.checks li { color: var(--ink); }
-.feature-hero { margin: 0; }
-.bands .feature { margin: 0; }
+.bands .feature-hero, .bands .feature { margin: 0 auto; }
+.bands .feature.flip { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
 .bands .feature.flip > .devices { order: -1; }
 .bands .feature:nth-of-type(even) > .devices { order: 0; }
 .bands .feature .checks { margin-top: 1.25rem; }
@@ -387,6 +387,7 @@ a.path-tile:hover { transform: translateY(-3px); }
 @media (max-width: 52rem) {
   .how-steps, .families, .faq-grid, .page-hero-grid, .tip-cards { grid-template-columns: 1fr; }
   .page-hero .hero-card, .page-hero .mosaic { width: min(22rem, 100%); }
+  .bands .feature.flip { grid-template-columns: 1fr; }
   .bands .feature.flip > .devices { order: 0; }
   .how-steps { gap: 1.25rem; }
   .lina-grid, .closing-grid { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 1.5rem; }
