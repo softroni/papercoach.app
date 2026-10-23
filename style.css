@@ -279,6 +279,8 @@ main.bands { max-width: none; padding: 0; }
 .how-steps li { position: relative; overflow: hidden; padding-bottom: 1.4rem; border: 1px solid var(--line); border-radius: 24px; background: var(--card); box-shadow: 0 22px 44px -30px rgb(31 27 20 / 0.4); }
 .how-visual { display: flex; align-items: flex-end; justify-content: center; aspect-ratio: 4 / 3.3; overflow: hidden; background: var(--tint); }
 .how-visual img { width: 100%; height: 100%; object-fit: cover; }
+.how-visual.print-frame { align-items: center; }
+.how-visual img.print { width: auto; height: 86%; border: 6px solid #fff; border-radius: 14px; box-shadow: 0 16px 30px -14px rgb(31 27 20 / 0.45); transform: rotate(-3deg); }
 .how-steps .num { position: absolute; top: 14px; left: 14px; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--green); box-shadow: 0 3px 0 var(--green-deep); color: #fff; font-weight: 800; }
 .how-steps h3 { margin: 1.2rem 1.4rem 0.35rem; font-size: 1.35rem; }
 .how-steps p { margin: 0 1.4rem; color: var(--muted); }
