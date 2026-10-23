@@ -18,6 +18,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Paper Coach: Learn to Draw","operatingSystem":"iOS, iPadOS","applicationCategory":"EducationalApplication","url":"https://papercoach.app","downloadUrl":"https://apps.apple.com/app/apple-store/id6816231257?pt=128560181&ct=web&mt=8","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Softroni LLC","url":"https://softroni.com"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Paper Coach?","acceptedAnswer":{"@type":"Answer","text":"An iPhone and iPad app that teaches drawing step by step, on real paper. Lina, the coach, draws one line on the screen and waits while you draw it on your page. There are 120 lessons on 12 paths, from a pine tree to a race car, and whole scenes drawn in short chapters."}},{"@type":"Question","name":"Who is it for?","acceptedAnswer":{"@type":"Answer","text":"Anyone who says they can’t draw: kids from about six, teens and grown-ups. The first lessons of every path are simple, and the later ones build on them."}},{"@type":"Question","name":"Do I need a tablet or a stylus?","acceptedAnswer":{"@type":"Answer","text":"No. You draw with a pencil or a pen on paper. The phone or iPad only shows you the next line."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"It is free to download. The first three lessons of every path, one scene on every path and the drawing of the day are free. Premium opens every lesson, by the week, by the year, or with one Lifetime payment."}},{"@type":"Question","name":"How long does a lesson take?","acceptedAnswer":{"@type":"Answer","text":"Most take five to ten minutes, and each one ends with a finished drawing on your paper."}}]}</script>
 <script src="/phone.js" defer></script>
+<script src="/voice.js" defer></script>
 </head>
 <body>
 <header class="bar">
@@ -86,6 +87,19 @@
     <li><strong>Draw it on paper.</strong> Copy it onto your page with a pencil or a pen, then tap “I drew it”. Nothing moves on until you do.</li>
     <li><strong>Finish a picture.</strong> A few minutes later the whole drawing is on your paper. Keep a photo of it in your sketchbook.</li>
   </ol>
+</section>
+
+<section class="meet-lina">
+  <h2>Meet Lina, your drawing coach</h2>
+  <div class="meet">
+    <img src="/lina.svg" alt="Lina, the drawing coach in Paper Coach, waving" width="210" height="240" loading="lazy">
+    <div>
+      <p>Lina is the artist inside Paper Coach. She draws each line slowly on the screen, says in a sentence or two where it starts and where it goes, then waits while you draw it on your paper. She never hurries you and never keeps score, and when the picture is done she has one last thing to say about it.</p>
+      <p class="voices"><button class="voice" type="button" data-voice="/voice/rocket/lesson-intro.m4a" aria-pressed="false" hidden>Hear Lina start a lesson</button><button class="voice" type="button" data-voice="/voice/rocket/body.m4a" aria-pressed="false" hidden>Hear Lina explain a line</button></p>
+      <ul class="said"><li>“Here's a rocket on the pad, fins down, flame lit. Build it from the nose down, then count down and go.”</li><li>“Start at the tip of the nose. Draw the left side, curving down to the bottom.”</li></ul>
+      <p class="small">Her voice is computer-generated. A switch in the app’s Settings turns it off, and every step is written on the screen as well.</p>
+    </div>
+  </div>
 </section>
 
 <section>
