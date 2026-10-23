@@ -21,6 +21,7 @@ h3 { font-size: 1.15rem; margin: 1.25rem 0 0.4rem; }
   .hero.with-phone { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 3.5rem; margin-inline: calc((100% - min(60rem, 100vw - 2.5rem)) / 2); text-align: left; }
   .hero.with-phone h1 { font-size: 2.9rem; }
   .hero.with-phone .store { align-items: flex-start; }
+  .hero.with-phone .qr { margin-inline: 0; }
 }
 .store { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; margin: 1.5rem 0; }
 .store span { font-size: 0.85rem; color: var(--muted); }
@@ -56,6 +57,13 @@ h3 { font-size: 1.15rem; margin: 1.25rem 0 0.4rem; }
 .offer.big { text-align: center; }
 .offer.big .store { align-items: center; }
 .facts li { margin: 0.5rem 0; }
+.qr { display: none; align-items: center; gap: 0.9rem; width: fit-content; margin: -0.5rem auto 1.5rem; padding: 0.6rem 1rem 0.6rem 0.6rem; border: 1px solid var(--line); border-radius: 16px; background: var(--card); color: var(--muted); font-size: 0.9rem; line-height: 1.4; text-align: left; }
+.qr img { flex: none; }
+.qr span { max-width: 15rem; }
+.qr strong { display: block; color: var(--ink); }
+.offer .qr { margin: 1rem auto 0; }
+.offer:not(.big) .qr { margin-inline: 0; }
+@media (hover: hover) and (pointer: fine) { .qr { display: flex; } }
 .tips li, .mistakes li { margin: 0.5rem 0; }
 .card.soon { background: var(--page); border-style: dashed; }
 .sheet { display: block; width: min(30rem, 100%); height: auto; margin: 1rem auto; border: 1px solid var(--line); border-radius: 16px; }
