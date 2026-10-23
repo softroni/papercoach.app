@@ -56,6 +56,11 @@ h3 { font-size: 1.15rem; margin: 1.25rem 0 0.4rem; }
 .offer.big { text-align: center; }
 .offer.big .store { align-items: center; }
 .facts li { margin: 0.5rem 0; }
+.tips li, .mistakes li { margin: 0.5rem 0; }
+.card.soon { background: var(--page); border-style: dashed; }
+.sheet { display: block; width: min(30rem, 100%); height: auto; margin: 1rem auto; border: 1px solid var(--line); border-radius: 16px; }
+.card.soon img { opacity: 0.6; }
+.path h3 a { color: var(--ink); }
 .updated { font-size: 0.85rem; color: var(--muted); margin-top: 2rem; }
 .closing { text-align: center; }
 .foot { padding: 2rem 1.25rem 3rem; text-align: center; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); }
