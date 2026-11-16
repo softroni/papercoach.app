@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "PLQFG9VC25.com.softroni.papercoach"
+        ],
+        "components": [
+          {
+            "/": "/lesson/*",
+            "comment": "A lesson, from the QR code beside it in a printed book"
+          }
+        ]
+      }
+    ]
+  }
+}
